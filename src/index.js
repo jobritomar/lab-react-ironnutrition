@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import json from './foods.json';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App foods={json}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
